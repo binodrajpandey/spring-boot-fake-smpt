@@ -21,14 +21,14 @@ public class MailApplicationTests {
 	
 	@Test
 	public void contextLoads() throws MessagingException {
-		String from = "pavan@localhost";
-		String to = "solapure@localhost";
+		String from = "binod@localhost";
+		String to = "john@localhost";
 		String subject = "Java Mail with Spring Boot";
 		 
 		EmailTemplate template = new EmailTemplate("hello-world.html");
 		 
 		Map<String, String> replacements = new HashMap<String, String>();
-		replacements.put("user", "Pavan");
+		replacements.put("user", "Binod");
 		replacements.put("today", String.valueOf(new Date()));
 		 
 		String message = template.getTemplate(replacements);
